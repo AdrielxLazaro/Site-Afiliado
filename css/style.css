@@ -1,0 +1,135 @@
+/* Remove margem e padding padrão de todos os elementos */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilo geral do corpo da página */
+body {
+  font-family: Arial, sans-serif; /* Fonte usada no site */
+  text-align: center;             /* Centraliza o conteúdo */
+  background-color: #6E6E6E;      /* Cor de fundo cinza */
+}
+
+/* Estilo do cabeçalho fixo no topo da tela */
+#cabecalho {
+  color: white;                     /* Cor do texto */
+  text-shadow: 5px 5px 5px black;   /* Sombra no texto para destaque */
+  background-color: #0D274A;        /* Cor de fundo azul escuro */
+  padding: 20px;                    /* Espaçamento interno */
+  z-index: 1000;                 /* Altura de empilhamento (corrigir para apenas "1000" se precisar usar) */
+  position: fixed;                  /* Fixa o cabeçalho no topo */
+  width: 100%;                      /* Ocupa toda a largura */
+  top: 0;                           /* Posicionado no topo da tela */
+}
+
+/* Estilo do título principal da página */
+.subtitle h1 {
+  font-size: 35px;
+  margin-top: 100px;                 /* Espaço para compensar o cabeçalho fixo */
+  color: #f40000;                    /* Vermelho forte */
+  text-shadow: 4px 4px 4px black;    /* Sombra para destacar */
+}
+
+/* Espaçamento entre seções */
+section {
+  margin: 40px 0;
+}
+
+/* Espaçamento dos subtítulos de seção */
+section h2 {
+  margin-bottom: 20px;
+}
+
+/* Container de produtos: usa flexbox para alinhar */
+.produto-container {
+  display: flex;
+  justify-content: center; /* Centraliza os elementos */
+  flex-wrap: wrap;         /* Permite quebra de linha se necessário */
+  gap: 30px;               /* Espaço entre os produtos */
+  padding: 20px;
+}
+
+/* Cada produto (div) dentro do container */
+.produto-container div {
+  width: 200px;              /* Largura fixa */
+  border: 3px solid black;   /* Borda preta */
+  background-color: white;   /* Fundo branco */
+  border-radius: 10px;       /* Bordas arredondadas */
+}
+
+/* Imagens dos produtos */
+.produto-container img {
+  width: 100%;                /* Ocupa 100% da largura da div */
+  height: auto;               /* Altura proporcional */
+  border-radius: 10px;        /* Arredonda as bordas da imagem */
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+  transition: transform 0.3s ease;       /* Animação suave no hover */
+}
+
+/* Efeito de "zoom" ao passar o mouse sobre o produto */
+.produto-container div:hover {
+  transform: scale(1.05);
+}
+
+/* Estilo específico para a seção Mercado Livre */
+#MercadoLivre {
+  font-size: 20px;
+  color: rgba(255, 94, 0, 0.964);           /* Laranja */
+  text-shadow: 4px 4px 4px black;
+}
+
+#MercadoLivre p {
+  color: black;
+  text-shadow: 1px 1px 1px rgb(240, 240, 240);
+}
+
+/* Estilo específico para a seção Shopee */
+#Shopee {
+  font-size: 20px;
+  color: rgba(255, 0, 0, 0.964);            /* Vermelho */
+  text-shadow: 4px 4px 4px black;
+}
+
+#Shopee p {
+  color: black;
+  text-shadow: 1px 1px 1px rgb(240, 240, 240);
+}
+
+/* Estilo específico para a seção Amazon */
+#Amazon {
+  font-size: 20px;
+  color: rgb(6, 0, 71);                     /* Azul escuro */
+  text-shadow: 3px 3px 3px rgb(208, 195, 195); /* Sombra suave */
+}
+
+#Amazon p {
+  color: black;
+  text-shadow: 1px 1px 1px rgb(240, 240, 240);
+}
+
+/* Estilo do rodapé */
+#rodape {
+  background-color: #0D274A; /* Mesma cor do cabeçalho */
+  padding: 20px;
+  margin-top: 40px;
+}
+
+/* Estilo dos textos dentro do rodapé */
+#rodape p {
+  font-size: 15px;
+  padding: 5px;
+}
+
+/* Estilo do link do Instagram no rodapé */
+#rodape a {
+  color: black;
+  text-decoration: none; /* Remove o sublinhado */
+  font-weight: bold;
+  font-size: 15px;
+}
+
+/* Quando o mouse passa sobre o link do Instagram */
+#rodape a:hover {
+  color: #f40000; /* Muda a cor para vermelho */
+}
